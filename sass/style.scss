@@ -29,6 +29,20 @@ body {
     background: $color_main;
 }
 
+.section-title {
+    color: $text_color_dark;
+    padding: 40px 0 0 0;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.section-subtitle {
+    margin-top: 0;
+    margin-bottom: 50px;
+    text-align: center;
+    font-style: italic;
+}
+
 
 /* Splash */
 
@@ -83,5 +97,89 @@ body {
     }
     h2 {
         font-style: italic;
+    }
+}
+
+/* Services */
+
+.col-services {
+    text-align: center;
+    a {
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+    }
+    
+}
+
+.services-title {
+    color: $text_color_dark;
+    font-weight: bold;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    width: 60px;
+    height: 60px;
+    color: $color_main;
+    border: 2px solid $color_main;
+    border-radius: 30px;
+}
+
+/* Portfolio */
+
+
+.portfolio {
+    background-color: $background_color_dark;
+}
+
+.portfolio-row {
+    justify-content: center;
+}
+
+.portfolio-item {
+    padding: 0;
+    margin: 25px 10px;
+    text-align: center;
+    background-color: $background_color_light;
+    img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+    p {
+        margin: 0 0 15px 0;
+    }
+}
+
+.portfolio-title {
+    color: $text_color_dark;
+    font-weight: bold;
+    margin: 15px 0 0 0;
+    line-height: 1;
+}
+
+/* Footer */
+
+.social-media {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    text-align: center;
+    li {
+        display: flex;
+        margin: 0 15px;
+        height: 50px;
+        width: 50px;
+        background-color: $text_color_dark;
+        border-radius: 25px;
+        align-items: center;
+        justify-content: center;
+    }
+    i {
+        color: $text_color_light;  
     }
 }
