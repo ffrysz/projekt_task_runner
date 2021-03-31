@@ -1,0 +1,87 @@
+/* Variables */
+$background_color_light: #fff;
+$background_color_dark: #ecf0f1;
+$text_color_grey: #7f8c8d;
+$text_color_light: #fff;
+$text_color_dark: #000;
+$color_main:#f1c40f;
+
+
+
+/* Global */
+
+*, *::before, *::after {
+    box-sizing: border-box; }
+
+body {
+    margin: 0;
+    background: $background_color_light;
+    color: $text_color_grey;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.btn {
+    text-decoration: none;
+    color: $text_color_light;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background: $color_main;
+}
+
+
+/* Splash */
+
+.splash {
+    background-image: url("https://images.pexels.com/photos/3178786/pexels-photo-3178786.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    .navbar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        .brand{
+            flex: 1;
+            text-align: center;
+            color: $color_main;
+            font-size: 26px;
+            font-style: italic;
+            margin: 0;
+            p {
+                margin: 0;
+            }
+        }
+        .panel {
+            flex: 1;
+            .nav_panel {
+                list-style: none;
+                li {
+                    display: inline-block;
+                    padding-left: 10px;
+                    a {
+                        text-decoration: none;
+                        color: $text_color_light;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.splash-inner {
+    color: $text_color_light;
+    text-align: center;
+    margin: auto;
+    h1 {
+        font-size: 36px;
+    }
+    h2 {
+        font-style: italic;
+    }
+}
